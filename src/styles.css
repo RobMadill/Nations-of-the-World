@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 10px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+span {
+    text-align: center;
+    display: inline-block;
+    font-size: large;
+    width: 100%;
+}
+
+.gridblock {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.mat-card {
+    cursor: pointer;
+    width: 80%;
+}
+
+.mat-card-content {
+    text-align: center;
+}

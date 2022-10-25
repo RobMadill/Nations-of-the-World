@@ -1,0 +1,22 @@
+<h1 mat-dialog-title>
+    {{country.Name}}
+</h1>
+<mat-dialog-content>
+    Country Code: {{country.Code}} ({{country.Code2}})
+    <br>
+    Continent: {{country.Continent}}
+    <br>
+    Region: {{country.Region}}
+    <br>
+    Surface Area: {{country.SurfaceArea}} km²
+    <br>
+    Population: {{country.Population}}
+    <br>
+    <h1 mat-dialog-title>Map</h1>
+    <div class="containerMap">
+        <img [src]="map" class="center">
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button class="btnCnt" mat-raised-button color="primary" [mat-dialog-close]="">CLOSE</button>
+</mat-dialog-actions>
